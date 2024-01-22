@@ -4,7 +4,17 @@ dotenv.config({ path: "./config.env" });
 const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "*",
+      "https://bajaj-rose.vercel.app/",
+      "https://bajaj-nu.vercel.app/",
+    ],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 const authRouter = require("./routes/userRouter");
 const policyRouter = require("./routes/buyPolicyRouter");
