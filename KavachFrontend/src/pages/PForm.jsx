@@ -7,7 +7,7 @@ import "./PolicyForm.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useNavigate } from "react-router-dom";
 const HomePage = () => {
-  const host = "https://bajaj-backend-06q7.onrender.com";
+  const host = "https://bajaj-5uw0.onrender.com";
   const [data1, setData] = useState("");
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
