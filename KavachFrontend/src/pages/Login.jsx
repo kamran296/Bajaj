@@ -13,7 +13,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-  const host = "https://bajaj-backend-06q7.onrender.com";
+  const host = "https://bajaj-5uw0.onrender.com";
   const handleSubmit = async (e) => {
     e.preventDefault();
 
