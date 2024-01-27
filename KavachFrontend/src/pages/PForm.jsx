@@ -210,7 +210,7 @@ const HomePage = () => {
                     onChange={onChange}
                   />
                 </div>
-                <div className="m-10 mb-1 w-1/3">
+                {/* <div className="m-10 mb-1 w-1/3">
                   <input
                     placeholder="Pin code"
                     type="tel"
@@ -224,8 +224,8 @@ const HomePage = () => {
                       "email"
                     }
                   />
-                </div>
-                <div className="m-10 mb-1 w-1/3">
+                </div> */}
+                {/* <div className="m-10 mb-1 w-1/3">
                   <input
                     placeholder="Address"
                     type="text"
@@ -239,7 +239,7 @@ const HomePage = () => {
                       "email"
                     }
                   />
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-center items-center">
                 <div className="m-10  w-1/3">

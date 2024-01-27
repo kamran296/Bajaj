@@ -30,7 +30,7 @@ const HomePage = () => {
       // console.log(await response.json());
       try {
         const storedResponse = await response.json();
-
+        console.log(storedResponse);
         setData(storedResponse);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -64,7 +64,7 @@ const HomePage = () => {
         dys: false,
         phone: data1.user.phone,
         income: credentials.income,
-        pin: data1.user.data.data.pan_data.address_data.pincode,
+        // pin: data1.user.data.data.pan_data.address_data.pincode,
         state: data1.user.data.data.pan_data.address_data.state,
         payTill: credentials.payTill,
         nominee: credentials.nominee,
@@ -210,7 +210,7 @@ const HomePage = () => {
                     onChange={onChange}
                   />
                 </div>
-                <div className="m-10 mb-1 w-1/3">
+                {/* <div className="m-10 mb-1 w-1/3">
                   <input
                     placeholder="Pin code"
                     type="tel"
@@ -224,8 +224,8 @@ const HomePage = () => {
                       "email"
                     }
                   />
-                </div>
-                <div className="m-10 mb-1 w-1/3">
+                </div> */}
+                {/* <div className="m-10 mb-1 w-1/3">
                   <input
                     placeholder="Address"
                     type="text"
@@ -239,7 +239,7 @@ const HomePage = () => {
                       "email"
                     }
                   />
-                </div>
+                </div> */}
               </div>
               <div className="flex justify-center items-center">
                 <div className="m-10  w-1/3">
